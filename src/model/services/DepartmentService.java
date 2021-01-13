@@ -25,4 +25,8 @@ public class DepartmentService {
 		}
 		Alerts.showAlert("Data changed completed", null, "The data was updated or add in the data base.", AlertType.INFORMATION);
 	}
+	
+	public void remove(Department obj) {
+		dao.deleteById(obj.getId());
+	}
 }
